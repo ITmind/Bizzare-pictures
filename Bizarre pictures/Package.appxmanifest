@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="6266ITmindCo.Penguinsinvasion" Publisher="CN=6D3509D6-5DB6-4E06-BD27-AD4149592F59" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Penguins invasion</DisplayName>
+    <PublisherDisplayName>ITmindCo</PublisherDisplayName>
+    <Logo>Assets\Mag50.jpg</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Bizarre_pictures.App">
+      <VisualElements DisplayName="Penguins invasion" Logo="Assets\Mag150.jpg" SmallLogo="Assets\Mag30.jpg" Description="Penguins invasion" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="noLogos" />
+        <SplashScreen Image="Assets\SplashPingvin.jpg" BackgroundColor="#292929" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
